@@ -1,0 +1,36 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+body, select, input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    flex: 3;
+    min-height: 20rem;
+}
+
+aside {
+    flex: 1;
+    font-size: smaller;
+}
+
+.flashes {
+    font-weight: bold;
+}
+
+select {
+    width: 15rem;
+}
+
+input[type='number'] {
+    width: 2rem;
+}

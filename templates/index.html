@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howest Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/screen.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Howest Shop</h1>
+    </header>
+    <div id="flex-container">
+        <main>
+            <h2>Our products</h2>
+
+            <ul class="flashes">
+                <li>message 1</li>
+                <li>message 2</li>
+                <li>message 3</li>
+            </ul>
+
+            <form method="POST">
+                <label for="product">Select a product:</label>
+                <select name="product" id="product">
+                    <option value="P001">Dummy product 1 - EUR 9.99</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" min="1" value="1">
+                <input type="submit" value="Add to cart">
+            </form>
+        </main>
+        <aside>
+            <h3>Your cart</h3>
+            <ul>
+                <li>Dummy product 1 x1 - EUR 9.99</li>
+            </ul>
+
+            <p>Cart total: <strong>EUR 9.99</strong></p>
+        </aside>
+    </div>
+    <footer>
+        <p>© Howest Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
